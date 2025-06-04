@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Imagem e Fé</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <h1>🎲 Imagem e Fé - Igreja Morada Itapoá</h1>
+  <p class="subtitle">Clique em cada dado para rolar</p>
+
+  <div class="dice-container">
+    <!-- Dado Numérico -->
+    <div class="scene" id="diceNumContainer">
+      <div class="cube" id="diceNum">
+        <div class="face face1"><div class="pip center"></div></div>
+        <div class="face face2">
+          <div class="pip top-left"></div><div class="pip bottom-right"></div>
+        </div>
+        <div class="face face3">
+          <div class="pip top-left"></div><div class="pip center"></div><div class="pip bottom-right"></div>
+        </div>
+        <div class="face face4">
+          <div class="pip top-left"></div><div class="pip top-right"></div>
+          <div class="pip bottom-left"></div><div class="pip bottom-right"></div>
+        </div>
+        <div class="face face5">
+          <div class="pip top-left"></div><div class="pip top-right"></div>
+          <div class="pip center"></div>
+          <div class="pip bottom-left"></div><div class="pip bottom-right"></div>
+        </div>
+        <div class="face face6">
+          <div class="pip top-left"></div><div class="pip top-right"></div>
+          <div class="pip middle-left"></div><div class="pip middle-right"></div>
+          <div class="pip bottom-left"></div><div class="pip bottom-right"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Dado com Letras -->
+    <div class="scene" id="diceCharContainer">
+      <div class="cube" id="diceChar">
+        <div class="face face1">P</div>
+        <div class="face face2">H</div>
+        <div class="face face3">O</div>
+        <div class="face face4">L</div>
+        <div class="face face5">A</div>
+        <div class="face face6">M</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="timer-container">
+    <div id="timer">03:00</div>
+    <div class="timer-buttons">
+        <button id="startBtn">Iniciar</button>
+        <button id="pauseBtn">Pausar</button>
+        <button id="resetBtn">Resetar</button>
+    </div>
+    </div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
