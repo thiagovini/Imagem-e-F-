@@ -47,7 +47,7 @@ diceChar.addEventListener("click", () => {
 });
 
 let timer;
-let timeLeft = 10; // 3 minutes in seconds
+let timeLeft = 180; // 3 minutes in seconds
 let isRunning = false;
 
 const timerDisplay = document.getElementById("timer");
