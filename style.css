@@ -1,0 +1,130 @@
+body {
+  font-family: 'Raleway', sans-serif;
+  background: linear-gradient(135deg, #e9eff1, #f6f9fc);
+  color: #333;
+  text-align: center;
+  padding: 40px;
+  margin: 0;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #666;
+}
+
+.dice-container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.scene {
+  width: 150px;
+  height: 150px;
+  perspective: 1000px;
+}
+
+.cube {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transform: rotateX(0deg) rotateY(0deg);
+  transition: transform 1s ease-in-out;
+  cursor: pointer;
+}
+
+.face {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+/* Transformações das faces */
+.face1 { transform: rotateY(0deg) translateZ(75px); }
+.face2 { transform: rotateY(90deg) translateZ(75px); }
+.face3 { transform: rotateY(180deg) translateZ(75px); }
+.face4 { transform: rotateY(-90deg) translateZ(75px); }
+.face5 { transform: rotateX(90deg) translateZ(75px); }
+.face6 { transform: rotateX(-90deg) translateZ(75px); }
+
+/* Pips (bolinhas dos números) */
+.pip {
+  width: 16px;
+  height: 16px;
+  background: #222;
+  border-radius: 50%;
+  position: absolute;
+}
+.center { top: 50%; left: 50%; transform: translate(-50%, -50%); }
+.top-left { top: 25%; left: 25%; }
+.top-right { top: 25%; right: 25%; }
+.middle-left { top: 50%; left: 25%; transform: translateY(-50%); }
+.middle-right { top: 50%; right: 25%; transform: translateY(-50%); }
+.bottom-left { bottom: 25%; left: 25%; }
+.bottom-right { bottom: 25%; right: 25%; }
+
+.result-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.result-box {
+  padding: 20px 30px;
+  background-color: #ffffff;
+  border: 2px solid #ccc;
+  border-radius: 12px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #222;
+  min-width: 150px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.timer-container {
+  margin-top: 50px;
+  text-align: center;
+}
+
+#timer {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+.timer-buttons button {
+  padding: 10px 20px;
+  margin: 0 10px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.timer-buttons button:hover {
+  background-color: #2980b9;
+}
